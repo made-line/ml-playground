@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ML Playground</title>
+    <style>
+      body {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #F2F2F2;
+      }
+      #root {
+        position: fixed;
+        top: 40px;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <select onchange="location = '?mode=' + this.options[this.selectedIndex].value">
+      <option disabled selected value="/">Jump to mode...</option>
+      <option value="">default</option>
+      <option value="minimal">minimal</option>
+      <option value="load-foods">load foods</option>
+      <option value="preload-metadata">preload metadata</option>
+      <option value="ml-knn-train">ml-knn-train</option>
+      <option value="ml-knn-ailab">ml-knn-ailab</option>
+      <option value="ml-svm-train">ml-svm-train</option>
+      <option value="ml-svm-ailab">ml-svm-ailab</option>
+      <option value="ml-mini-project-ailab">ml-mini-project-ailab</option>
+      <option value="ml-final-project-ailab">ml-final-project-ailab</option>
+
+    </select>
+
+    <div id="root"></div>
+    <script src="mainDev.js"></script>
+  </body>
+</html>
